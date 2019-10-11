@@ -35,8 +35,6 @@ const PrettoSlider = withStyles({
 })(Slider);
 
 
-
-
 export default function CustomizedSlider(props) {
 
     const handleSlider = (e, val) => {

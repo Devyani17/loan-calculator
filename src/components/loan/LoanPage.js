@@ -30,7 +30,6 @@ export default class LoanPage extends React.Component {
             });
     }
 
-
     getSliderData = (value) => {
         console.log('value===', value)
         if (value > 499) {
