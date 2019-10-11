@@ -1,0 +1,17 @@
+.loanWrapper{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    min-height: 108px;
+    padding: 16px;
+}
+
+.loanRange{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.mainWrapper{
+    margin-top: 45px;
+}
