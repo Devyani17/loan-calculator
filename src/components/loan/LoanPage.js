@@ -8,6 +8,7 @@ import './loan.css';
 import Slider from '../slider/Slider';
 
 export default class LoanPage extends React.Component {
+    logs = [];
     constructor() {
         super();
         this.state = {
@@ -18,7 +19,11 @@ export default class LoanPage extends React.Component {
     }
 
     componentDidMount() {
-        this.fetchData(this.state);
+        const state = this.state;
+        this.fetchData(state);
+        global.fetchData = (state) => {
+            this.fetchData(state);
+        }
     }
 
     fetchData = (state) => {
@@ -26,12 +31,12 @@ export default class LoanPage extends React.Component {
             .then(response => response.json())
             .then(data => {
                 this.setState({ data })
-                console.log("data--", data)
+                this.logs.push(data)
+                localStorage.setItem("logs", JSON.stringify(this.logs));
             });
     }
 
     getSliderData = (value) => {
-        console.log('value===', value)
         if (value > 499) {
             this.setState({
                 loanAmount: value

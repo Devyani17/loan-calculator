@@ -1,0 +1,22 @@
+.sidebarWrapper {
+    position: fixed;
+    right: 0;
+    top: 0;
+    width: 280px;
+    height: 100vh;
+    background-color: #fff;
+    padding: 30px 20px;
+    box-shadow: 5px 0px 9px 6px #888888;
+}
+
+.listHeading{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin: 20px 0;
+}
+
+.historyTitle{
+    text-align: center;
+    margin-bottom: 20px;
+}
