@@ -55,7 +55,7 @@ export default function CustomizedSlider(props) {
                 name={name}
             />
             {
-                name === "Tenure" ?
+                name === "Loan Duration(months)" ?
                     (<div className="loanRange">
                         <div>{minValue}</div>
                         <div>{maxValue}</div>

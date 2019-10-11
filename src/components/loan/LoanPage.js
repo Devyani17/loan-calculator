@@ -71,7 +71,7 @@ export default class LoanPage extends React.Component {
                         <Divider />
                     </CardContent>
                     <Slider name="Loan Amount" value={loanAmount} minValue={500} maxValue={5000} getSliderData={this.getSliderData} />
-                    <Slider name="Tenure" value={tenure} minValue={6} maxValue={24} getSliderData={this.getSliderData} />
+                    <Slider name="Loan Duration(months)" value={tenure} minValue={6} maxValue={24} getSliderData={this.getSliderData} />
                 </Card>
             </Container>
         );
